@@ -16,29 +16,41 @@
     </style>
 </head>
 <body>
-    <div id="area">
-        clique
+    
+    <p> 
+        Digite o primeiro valor
+    </p>
+    <input type="number" name="n1" id="n1">
+    <p>
+        Digite o segundo valor
+    </p>
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="calcular" id="calcular" onclick="calcular()">
+    <div id="resposta">
+        resposta
     </div>
 
     <script>
 
-        var area = document.getElementById('area')
-        area.addEventListener('click', clicar)
-        area.addEventListener('mouseenter', entrou)
-        area.addEventListener('mouseout', sair)
+        
 
-        function clicar(){
-            area.innerText = 'clicou'
-        }
-        function entrou(){
-            area.innerText = 'entrou'
-            area.style.background = 'green'
-        }
-        function sair(){
-            area.innerText = 'saiu'
-            area.style.background = 'blue'
+        
+
+        function calcular(){
+            var n1 = document.getElementById('n1')
+            var n2 = document.getElementById('n2')
+            var calcular = document.getElementById('calcular')
+            var resposta = document.getElementById('resposta')
+            var n1 = Number(n1.value)
+            var n2 = Number(n2.value)
+            var s = n1+n2
+            resposta.innerHTML = `A soma entre ${n1} + ${n2} = ${s}`
 
         }
+
+
+
+        
 
     </script>
 </body>
