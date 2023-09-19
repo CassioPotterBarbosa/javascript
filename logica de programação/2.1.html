@@ -10,7 +10,21 @@
         Ola
     </h1>
     nome <input type="text" name="nome" id="nome">
-    <input type="button" value="mostra">
+    <br>
+    <input type="button" value="mostra" id="m">
+    
     <p id="res"></p>
+
+    <script>
+        var m = document.getElementById('m')
+        m.addEventListener("click", ola)
+
+        function ola(){
+            alert('oi')
+            var nome = document.getElementById('nome')
+            var res = document.getElementById('res')
+            res.innerHTML(`ola ${nome}`)
+        }
+    </script>
 </body>
 </html>
