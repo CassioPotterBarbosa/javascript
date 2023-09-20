@@ -15,14 +15,17 @@
     </p>
     <p id="res"></p>
     <script>
-        var nome = document.getElementById("nome")
+       
         var b = document.getElementById("b")
-        var res = document.getElementById("res")
+        
 
         b.addEventListener("click", ola)
 
         function ola(){
-            alert("ggg")
+            var res = document.getElementById("res")
+            var nome = document.getElementById("nome").value
+            res.innerHTML("ola "+nome)
+
         }
     </script>
 </body>
