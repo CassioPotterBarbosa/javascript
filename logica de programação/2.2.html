@@ -6,15 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    
 
-    <input type="button" value="botao" id="btn" onclick="btn()">
+    <input type="button" value="botao" id="btn">
 
     <script>
       
 
-        function btn(){
+        function teste(){
             alert("btn")
         }
+        var btn = document.getElementById("btn")
+        btn.addEventListener("click", teste)
     </script>
     
 </body>
