@@ -6,15 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>
+        LOCADOURA
+    </h1>
+    Nome: <input type="text" name="nome" id="inNome">
+    Duração <input type="text" name="dur" id="inDur">
 
     <input type="button" value="botao" id="btn">
 
     <script>
+        var nome = document.getElementById("inNome").value
+        var dur = document.getElementById("inDur")
+        var ho = Number(dur.value)
+
+        var h = Math.floor(ho/60)
+        
       
 
         function teste(){
-            alert("btn")
+            alert(nome)
+            alert(ho)
         }
         var btn = document.getElementById("btn")
         btn.addEventListener("click", teste)
