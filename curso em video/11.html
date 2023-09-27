@@ -5,25 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        body{
             margin: 0;
             padding: 0;
-            
+            width: 75vh;
+            height: 80vh;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: auto;
+            text-align: center;
+        }
+        #ver{
+            margin: 5px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>
-            CONDIÇOES
+            TESTE DE VELOCIDADE
         </h1>
+
     </header>
     <main>
-        
+        <p>
+            Qual a sua velocidade 
+        </p>
+        <input type="number" name="vel" id="vel"><br>
+        <input type="button" value="ver" id="ver" onclick="ver()">
+
     </main>
     <footer>
-
+        <div id="res"></div>
     </footer>
-    
+    <script>
+                
+        function ver(){
+            var vel = document.getElementById('vel')
+            var res = document.getElementById('res')
+            var vel = Number(vel.value)
+
+            res.innerHTML = `Sua velocidade é de ${vel}Km/h. </br>`
+
+            if(vel > 60){
+                res.innerHTML += `E voçê esta multado. </br>`
+            }
+            res.innerHTML += `Dirija sempre usando o cinto de segurança.`
+        }
+    </script>
 </body>
 </html>
