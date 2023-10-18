@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        MEDIA DO ALUNO
+    </h1>
+    <p>
+        Digite a primeira nota 
+    </p>
+    <input type="number" name="n1" id="n1">
+    <p>
+        Digite a segunda nota
+    </p>
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="calc" onclick="calc()">
+
+    <script>
+        function calc(){
+            var n1 = document.getElementById("n1")
+            var n2 = document.getElementById("n2")
+            var nn1 = Number(n1.value)
+            var nn2 = Number(n2.value)
+
+            document.write(`Com a nota ${nn1} e ${nn2} a media sera ${((nn1+nn2)/2).toFixed(1)}`)
+
+        }
+    </script>
+    
+</body>
+</html>
