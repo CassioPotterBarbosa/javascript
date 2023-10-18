@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        KM,M,CM,MM
+    </h1>
+    <h3>
+        Digite um valor
+    </h3>
+    <input type="number" name="n" id="n">
+    <input type="button" value="calc" onclick="calc()">
+
+    <script>
+        function calc(){
+            var n = document.getElementById("n")
+            var n1 = Number(n.value)
+
+            document.write(`<h3>O numero ${n1}</br> em km fica ${(n1/1000)}</br> em cm fica ${(n1*100).toFixed(1)}</br> em milimetro fica ${(n1*1000).toFixed(1)}</h3>`)
+            }
+    </script>
+    
+</body>
+</html>
