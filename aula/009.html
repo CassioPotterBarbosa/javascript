@@ -14,22 +14,26 @@
     </H3>
     <input type="number" name="n" id="n">
     <input type="button" value="calc" onclick="calc()">
+    <div id="res"></div>
 
     <script>
-        function calc(){}
+        function calc(){
             var n = document.getElementById("n")
             var nu = Number(n.value)
 
-            document.write(`01 x ${nu} = ${nu*1}`)
-            document.write(`02 x ${nu} = ${nu*2}`)
-            document.write(`03 x ${nu} = ${nu*3}`)
-            document.write(`04 x ${nu} = ${nu*4}`)
-            document.write(`05 x ${nu} = ${nu*5}`)
-            document.write(`06 x ${nu} = ${nu*6}`)
-            document.write(`07 x ${nu} = ${nu*7}`)
-            document.write(`08 x ${nu} = ${nu*8}`)
-            document.write(`09 x ${nu} = ${nu*9}`)
-            document.write(`10 x ${nu} = ${nu*10}`)
+            res.innerHTML =(`
+            01 x ${nu} = ${nu*1}</br>
+            02 x ${nu} = ${nu*2}</br>
+            03 x ${nu} = ${nu*3}</br>
+            04 x ${nu} = ${nu*4}</br>
+            05 x ${nu} = ${nu*5}</br>
+            06 x ${nu} = ${nu*6}</br>
+            07 x ${nu} = ${nu*7}</br>
+            08 x ${nu} = ${nu*8}</br>
+            09 x ${nu} = ${nu*9}</br>
+            10 x ${nu} = ${nu*10}
+            `)
+        }
     </script>
     
 </body>
