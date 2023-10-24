@@ -6,7 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>
+        TABUADA
+    </h1>
+    <H3>
+        Digite um numero para saber a sua tabuada
+    </H3>
+    <input type="number" name="n" id="n">
+    <input type="button" value="calc" onclick="calc()">
+
+    <script>
+        function calc(){}
+            var n = document.getElementById("n")
+            var nu = Number(n.value)
+
+            document.write(`01 x ${nu} = ${nu*1}`)
+            document.write(`02 x ${nu} = ${nu*2}`)
+            document.write(`03 x ${nu} = ${nu*3}`)
+            document.write(`04 x ${nu} = ${nu*4}`)
+            document.write(`05 x ${nu} = ${nu*5}`)
+            document.write(`06 x ${nu} = ${nu*6}`)
+            document.write(`07 x ${nu} = ${nu*7}`)
+            document.write(`08 x ${nu} = ${nu*8}`)
+            document.write(`09 x ${nu} = ${nu*9}`)
+            document.write(`10 x ${nu} = ${nu*10}`)
+    </script>
     
 </body>
 </html>
