@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="valor" id="inValor" placeholder="valor">
+    <input type="button" value="calcular" onclick="btnclc()">
+    <div id="res"></div>
+
+    <script>
+        function btnclc(){
+            var valor = document.getElementById ('inValor')
+            var val = Number(valor.value)
+            var res = document.getElementById('res')
+            var por = val/100*15
+            var novo = val-por
+
+            res.innerHTML = (`
+            O valor é ${val}</br>
+            Com desconto de 15% </br>
+            Sua compra fica ${novo}
+            `)
+
+        }
+    </script>
+
+    
+</body>
+</html>
